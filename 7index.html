@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanweer Enterprise Limited | Quality Building Materials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a2a3a;
+            --red: #c0392b;
+            --white: #ffffff;
+            --light-bg: #f4f7f6;
+            --text: #333;
+        }
+        /* HEADER */
+        .site-header { padding: 15px 0; background: var(--white); border-bottom: 2px solid #eee; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+
+        /* LOGO BOX */
+        .logo-box {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            font-style: italic; /* The professional slant */
+            letter-spacing: -2px;
+            border: 3px solid var(--brand-blue);
+            padding: 2px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .logo-box .T { color: var(--brand-red); }
+        .logo-box .E { color: var(--brand-blue); }
+
+        /* NAV LINKS */
+        .nav-links { display: flex; gap: 30px; align-items: center; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--navy); font-weight: 600; font-size: 1rem; }
+        .nav-links a:hover { color: var(--brand-blue); }
+
+        /* WHATSAPP CTA */
+        .btn-whatsapp {
+            background: var(--brand-red);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Source Sans 3', sans-serif; color: var(--text); line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Navigation */
+
+        /* Hero */
+        .hero { background: var(--navy); color: var(--white); padding: 60px 0; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .btn-browse { background: var(--red); color: white; padding: 12px 30px; border-radius: 4px; text-decoration: none; font-weight: 700; display: inline-block; margin-top: 20px; }
+
+        /* style.css - Tanweer Enterprise Limited */
+
+:root {
+    --brand-red: #d92419;
+    --brand-blue: #005691;
+    --navy: #1a2a3a;
+    --white: #ffffff;
+    --light-bg: #f8f9fa;
+    --text: #333;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    font-family: 'Source Sans 3', sans-serif; 
+    color: var(--text); 
+    background: var(--light-bg); 
+    line-height: 1.6; 
+}
+
+/* Keeps everything on the same imaginary vertical line on the left */
+.container {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Aligns the heading to the left (one end) */
+.cat-title {
+    width: 100%;
+    text-align: left;
+    margin: 40px 0 20px 0;
+    font-size: 1.5rem;
+    color: #1a2a3a;
+    border-left: 5px solid #d92419; /* Kenyan Hardware Red */
+    padding-left: 15px;
+}
+
+/* The Grid that starts from the left and doesn't stretch items too much */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px; /* CTM-style tight spacing */
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: start;
+    clear: both;
+}
+
+/* Forces all cards to be uniform */
+.card {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    height: 200px; /* Fixed height for all images */
+    width: 100%;
+    object-fit: cover; /* Centers and crops the photo */
+}
+        /* Contact */
+        .contact-section { padding: 60px 0; text-align: center; }
+        .map-preview { height: 200px; background: #ddd; margin: 20px auto; max-width: 600px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+        .footer { background: var(--navy); color: var(--white); padding: 30px 0; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-inner">
+            
+            <a href="#" class="logo-box">
+                <span class="T">T</span><span class="E">E</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://wa.me/254729558296" class="btn-whatsapp">Chat on WhatsApp</a></li>
+            </ul>
+          </div>
+    </header>
+</body>
+
+<header class="hero">
+    <div class="container">
+        <h1>Tanweer Enterprise Limited</h1>
+        <p>Your trusted partner for quality building materials.</p>
+        <a href="#products" class="btn-browse">Browse Products</a>
+    </div>
+</header>
+
+ <main>  
+<section id="products" class="products-section">
+    <div class="container">
+        
+        <h2 id="structural" class="cat-title">Structural & Foundation</h2>
+        <div class="grid">
+            <div class="card"><img src="cement.jpg" alt="Cement"><div class="card-body"><h3>Cement</h3><span class="price">Current Market Rate</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Cement." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="rods . jpg.jfif" alt="Steel Rods"><div class="card-body"><h3>Steel Rods</h3><span class="price">Daily market rate</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Steel Rods." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="timber . jpg.jfif" alt="Timber"><div class="card-body"><h3>Timber</h3><span class="price">Price per foot</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Timber." class="btn-order"> Inquire Now</a></div></div>
+            <div class="card"><img src="steelmesh . jpg.jfif" alt=" Reinforcement Steel Mesh"><div class="card-body"><h3>Reinforcement Steel Mesh</h3><span class="price">Daily Market Rate</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Steel Mesh." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="bricks . jpg.jfif" alt="Bricks"><div class="card-body"><h3>Bricks</h3><span class="price">Bulk Pricing Available</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Bricks." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="blocks . jpg.jfif" alt="Vent Blocks"><div class="card-body"><h3>Vent Blocks</h3><span class="price">Current Market Rate</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Vent Blocks." class="btn-order">Inquire Now</a></div></div>
+        </div>
+
+        <h2 id="roofing" class="cat-title">Roofing & External Finishing</h2>
+        <div class="grid">
+            <div class="card"><img src="iron . jpg.jfif" alt="Iron Sheets"><div class="card-body"><h3>Iron Sheets</h3><span class="price">Price per Sheet </span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Iron Sheets." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="bitumen . jpg.jfif" alt="Bitumen roof"><div class="card-body"><h3>Bitumen roof</h3><span class="price">Price per Roll</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Bitumen." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="metalsheets . jpg.jfif" alt="Metal Sheets"><div class="card-body"><h3>Metal Sheets</h3><span class="price">Various Gauges Available</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Metal Sheets." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="rnails . jpg.jfif" alt="Roofing nails"><div class="card-body"><h3>Roofing nails</h3><span class="price">Price per Packet</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Roofing Accessories." class="btn-order">Inquire Now</a></div></div>
+        </div>
+
+        <h2 id="interiors" class="cat-title">Interior & Finishes</h2>
+        <div class="grid">
+            <div class="card"><img src="tiles . jpg.jfif" alt="Tiles"><div class="card-body"><h3>Ceramic & Porcelain Tiles</h3><span class="price">Multiple Sizes & Design</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Tiles." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="plyywood . jpg.jfif" alt="Plywood"><div class="card-body"><h3>Plywood</h3><span class="price">Varies by Thickness</span> <a href="https://wa.me/254729558296?text=Hi, I’m interested in Plywood." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="paints . jpg.png" alt="Paint"><div class="card-body"><h3>Paint</h3><span class="price">Assorted Colors & Finishes</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Paint." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="gypsum . jpg.jfif" alt="Gypsum Board"><div class="card-body"><h3>Gypsum Boards</h3><span class="price">KES per sheet</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Gypsum Board." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="Adhesive, Caulk, Sealant . jpg.jfif" alt="Sealants"><div class="card-body"><h3>Sealants</h3><span class="price">Varieties Available</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Sealants." class="btn-order">Inquire Now</a></div></div>
+        </div>
+
+        <h2 id="plumbing" class="cat-title">Plumbing Materials</h2>
+        <div class="grid">
+            <div class="card"><img src="pvc . jpg.jfif" alt="PVC Pipes"><div class="card-body"><h3>PVC Pipes</h3><span class="price">Price varies by size</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in PVC Pipes." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="ppr . jpg.jfif" alt="PPR Fittings"><div class="card-body"><h3>PPR Fitting</h3><span class="price">From KES 50/meter</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in PPR Fittings." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="pvcfitting . jpg.jfif" alt="PVC Fittings"><div class="card-body"><h3>PVC Fittings</h3><span class="price">KES /kg</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in PVC Fittings." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="kitchensink . jpg.jfif" alt="Kitchen Sink"><div class="card-body"><h3>Kitchen Sink</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Kitchen Sink." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="washbasin . jpg.jfif" alt="Wash Basin"><div class="card-body"><h3>Wash Basin</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Wash Basin." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="toilet . jpg.jfif" alt="Toilet"><div class="card-body"><h3>Toilet</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Toilet." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="tap . jpg.jfif" alt="Heavy dutyTap"><div class="card-body"><h3>Heavy Duty Tap</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Faucets." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="hose . jpg.jfif" alt="Hose Pipe"><div class="card-body"><h3>Hose Pipe</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Shower Heads." class="btn-order">Inquire Now</a></div></div>
+        </div>
+
+       <h2 id="Fencing" class="cat-title">Fencing/ Wire Materials</h2>
+       <div class="grid">
+            <div class="card"><img src="chainlink . jpg.jfif" alt="Chain Link"><div class="card-body"><h3>Chain Link</h3><span class="price">KES per meter</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Chain Link." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="barbed . jpg.jfif" alt="Barbed Wire"><div class="card-body"><h3>Barbed Wire</h3><span class="price">KES per meter</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Barbed Wire." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="razor . jpg.jfif" alt="Razor Wire"><div class="card-body"><h3>Razor Wire</h3><span class="price">KES per meter</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Razor Wire." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="welded . jpg.jfif" alt="Weld Mesh"><div class="card-body"><h3>Weld Mesh</h3><span class="price">KES per sheet</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Weld Mesh." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="binding . jpg.jfif" alt="Binding Wire"><div class="card-body"><h3>Binding Wire</h3><span class="price">KES each</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Fencing Posts." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="chain . jpg" alt="Chains"><div class="cardgit add-body"><h3>Chains</h3><span class="price">KES each</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Fencing Posts." class="btn-order">Inquire Now</a></div></div>
+        </div>
+        
+        <h2 id="Electrical" class="cat-title">Electrical equipment</h2>
+        <div class="grid">
+            <div class="card"><img src="motor . jpg.jfif" alt="Motor"><div class="card-body"><h3>Motors</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Circuit Breakers." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="weldmachine . jpg.jfif" alt="Welding Machine"><div class="card-body"><h3>Welding Machine</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Welding Machine." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="drillmachine . jpg.jfif" alt="Electric Drilling Machine"><div class="card-body"><h3>Electric Drilling Machine</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Drill Machine." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="anglegrinder . jpg.jfif" alt="Angle Grinder"><div class="card-body"><h3>Angle Grinder</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Angle Grinder." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="meter . jpg.jfif" alt="Multimeter"><div class="card-body"><h3>Multimeter</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Multimeter." class="btn-order">Inquire Now</a></div></div>  
+            <div class="card"><img src="conduit . jpg.jfif" alt="Pipe Conduit"><div class="card-body"><h3>Pipe Conduit</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Circuit Breakers." class="btn-order">Inquire Now</a></div></div>     
+            <div class="card"><img src="cables . jpg" alt="Electrical cables"><div class="card-body"><h3>Electrical Cables</h3><span class="price">From KES 50/meter</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Electrical Cables." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="cat7ethernet . jpg.jfif" alt="Ethernet Cable"><div class="card-body"><h3>Ethernet Cable</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in CAT 7 Ethernet Cable." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="trunking . jpg.jfif" alt=" Cable Trunking"><div class="card-body"><h3>Cable Trunking</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Circuit Breakers." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="i . jpg.jfif" alt="Switches & Sockets (i)"><div class="card-body"><h3>Switches & Sockets (i)</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Switches." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="tapes . jpg.jfif" alt="Electrical tape"><div class="card-body"><h3>Electrical tape</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Electrical tape." class="btn-order">Inquire Now</a></div></div>
+            <div class="card"><img src="tie . jpg.jfif" alt="Cable Tie"><div class="card-body"><h3>Cable Tie</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Cable Tie." class="btn-order">Inquire Now</a></div></div>
+        </div>
+
+        <h2 id="Tools" class="cat-title">Tools & Accessories</h2>
+        <div class="grid">
+        <div class="card"><img src="toolbox . jpg.jfif" alt="Tool Box"><div class="card-body"><h3>Tool Box</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Tool Boxes." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="spanners . jpg.jfif" alt="Spanners"><div class="card-body"><h3>Spanners</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Spanners." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="hammer . jpg.jfif" alt="Hammer"><div class="card-body"><h3>Hammer</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Hammers." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="boltcutter . jpg.jfif" alt="Bolt Cutter"><div class="card-body"><h3>Bolt Cutter</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Bolt Cutters." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="Pipewrench . jpg.jfif" alt="Pipe Wrench"><div class="card-body"><h3>Pipe Wrench</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Pipe Wrenches." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="boltsandnuts . jpg.jfif" alt="Bolts and Nuts"><div class="card-body"><h3>Bolts and Nuts</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Bolts and Nuts." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="nail . jpg.jfif" alt="Nail"><div class="card-body"><h3>Nails</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Nails." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="screws . jpg.jfif" alt="Screws"><div class="card-body"><h3>Screws</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Screws." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="drillbits . jpg.jfif" alt="Drill Bits"><div class="card-body"><h3>Drill Bits</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Drill Bits." class="btn-order">Inquire Now</a></div></div>  
+        <div class="card"><img src="shovel . jpg.jfif" alt="Shovel"><div class="card-body"><h3>Shovel</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Hand Tools." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="trowel . jpg.jfif" alt="Trowel"><div class="card-body"><h3>Trowel</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Hand Tools." class="btn-order">Inquire Now</a></div></div> 
+        <div class="card"><img src="flooringwell . jpg.jfif" alt="Flooring Well"><div class="card-body"><h3>Flooring Well</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Hand Tools." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="ladder . jpg.jfif" alt="Ladder"><div class="card-body"><h3>Ladder</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Ladders." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="gardenrake . jpg.jfif   " alt=" Garden rake"><div class="card-body"><h3>Garden Rake</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Wheelbarrows." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="leafrake . jpg.jfif" alt="Leaf Rake"><div class="card-body"><h3>Leaf Rake</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Leaf Rakes." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="Chainsaw . jpg.jfif" alt="Chainsaw"><div class="card-body"><h3>Chainsaw</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Chainsaws." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="hacksaw . jpg.jfif" alt="Hack Saw"><div class="card-body"><h3>Hack Saw</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Hand Tools." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="handsaw . jpg.jfif" alt="Hand Saw"><div class="card-body"><h3>Hand Saw</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Hand Tools." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="sandpaper . jpg.jfif" alt="Sandpaper"><div class="card-body"><h3>Sandpaper</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Sandpaper." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="mtape . jpg.jfif" alt="Measuring Tape"><div class="card-body"><h3>Measuring Tape</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Measuring Tapes." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="paintroller . jpg.jfif" alt="Paint Roller"><div class="card-body"><h3>Paint Roller</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Painting Accessories." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="paintbrush . jpg.jfif" alt="Paint Brush"><div class="card-body"><h3>Paint Brush</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Painting Accessories." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="torque . jpg.jfif" alt="Torque Keys"><div class="card-body"><h3>Torque Keys</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Torque Wrenches." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="allen . jpg.jfif" alt="Allen keys"><div class="card-body"><h3>Allen keys</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Allen keys." class="btn-order">Inquire Now</a></div></div>
+    
+    </div>
+
+        <h2 id="Safety" class="cat-title">Safety & Protective Gear</h2>
+        <div class="grid">
+        <div class="card"><img src="overall . jpg.jfif" alt="Overall"><div class="card-body"><h3>Overall</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Work Gloves." class="btn-order">Inquire Now</a></div></div>   
+        <div class="card"><img src="reflectors . jpg.jfif" alt="Reflectors"><div class="card-body"><h3>Reflectors</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Reflectors." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="helmet . jpg.jfif" alt="Safety Helmet"><div class="card-body"><h3>Safety Helmet</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Safety Helmets." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="boots . jpg.jfif" alt="Safety Boots"><div class="card-body"><h3>Safety Boots</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Safety Boots." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="industrial . jpg.jfif" alt="Work Gloves"><div class="card-body"><h3>Work Gloves</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Work Gloves." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="rubber . jpg.jfif" alt="Rubber Gloves"><div class="card-body"><h3>Rubber Gloves</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Rubber Gloves." class="btn-order">Inquire Now</a></div></div>
+        <div class="card"><img src="goggles . jpg.jfif" alt="Safety Goggles"><div class="card-body"><h3>Safety Goggles</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Safety Goggles." class="btn-order">Inquire Now</a></div></div>    
+        <div class="card"><img src="earmuffs . jpg.jfif" alt="Earmuffs"><div class="card-body"><h3>Earmuffs</h3><span class="price">KES -</span><a href="https://wa.me/254729558296?text=Hi, I’m interested in Earmuffs." class="btn-order">Inquire Now</a></div></div>
+    
+    </section>
+</div>
+</main>
+>
+
+<section class="contact-section" id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Phone: +254 729 558296| +254 711 842 722| +254 700 198 553 Email: tanweerenterpriseltd@gmail.com</p>
+        <p>Location: Mtwapa, Kenya</p>
+        <div class="map-preview">Map Preview (Link to Google Maps)</div>
+        <a href="https://wa.me/254729558296" class="btn-browse" style="margin-top: 10px;">Chat on WhatsApp</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Tanweer Enterprise Limited · All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
