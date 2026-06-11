@@ -1,2 +1,2 @@
-# tanweer-enterprise-repo
-Building &amp; Construction Materials Store
+Portfolio copy of a client project.
+Live site: www.clientsite.com
